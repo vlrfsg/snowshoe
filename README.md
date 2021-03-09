@@ -1,14 +1,19 @@
-# snowshoe
-Snowshoe has three characteristic features.
-## multipurpose syntax
-Snowshoe has two flow control expressions; if and loop.
-I mostly work on machine language, which has only one of those; jump instruction.
-Of course, for most purposes, we don't want to use what is called goto in assembly language.
-So I searched for the minimum yet not spaghetti-causing expressions.
-
-# side return
-Functions in snowshoe can take multiple arguments.
-
+# Snowshoe
+Snowshoe is a programming language somewhere between low and middle level.
+It has three characteristic features.
+## Multipurpose Syntax
+Snowshoe has only two flow control expressions; if and loop.
+These are effective enough to replace others.
+## Side Return
+Functions in Snowshoe can give several side return value besides the main one.
+These parallel results from functions removed any exception-processing expression.
+## One-layer Import
+You can import definitions from a source file to another.
+However, Snowshoe does not recognize any definitions imported indirectly.
+Also, most words are imported with a prefix.
+These keep Snowshoe namespaces clean.
+# Progress
+-10%
 # license
 
    Copyright 2021 vlrfsg
