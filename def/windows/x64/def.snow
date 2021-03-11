@@ -1,0 +1,14 @@
+Snowshoe source file
+Definition of basic functions
+Copyright 2021 vlrfsg
+
+<+:machine.txt>
+<-:bin.txt>
+<>
+
+(Bool) := ("b")
+(Integer) := ("i")
+(Float) := ("f")
+(Literal) := ("l")
+
+
