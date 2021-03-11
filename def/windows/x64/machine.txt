@@ -1,25 +1,35 @@
 #Snowshoe translation file for Windows x64
 
 |r |m |b |w |d |q
-|rax |rcx |rdx |rbx |rsi |rdi |r8 |r9 |r10 |r11 |r13 |r14 |r15
+|rax |rcx |rdx |rbx |rsp |rbp |rsi |rdi
+|r8 |r9 |r10 |r11 |r12 |r13 |r14 |r15
 
+{
+  [p QW R IM]
+  (? QW w)
+  (' 66 (p * R IM))
+}
+{
+  [p Q R IM]
+  (? Q q)
+  (| 48 (p * R IM))
+}
+{
+  [p Q R IM]
+  (e R)
+  (| 44 (p * * IM))
+}
+{
+  [p Q R IM]
+  (e (@ IM))
+  (| 42 (p * * IM))
+}
+{
+  [p Q R IM]
+  (e (r IM))
+  (41)
+}
 
-(v <A rax>) : (0)
-(v <A rcx>) : (1)
-(v <A rdx>) : (2)
-(v <A rbx>) : (3)
-(v <A rsp>) : (4)
-(v <A rbp>) : (5)
-(v <A rsi>) : (6)
-(v <A rdi>) : (7)
-(v <A r8>) : (0)
-(v <A r9>) : (1)
-(v <A r10>) : (2)
-(v <A r11>) : (3)
-(v <A r12>) : (4)
-(v <A r13>) : (5)
-(v <A r14>) : (6)
-(v <A r15>) : (7)
 
 ()
 
