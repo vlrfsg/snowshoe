@@ -1,0 +1,11 @@
+Snowshoe definition file math.snow
+Copyright 2021 vlrfsg
+<>
+
+(I (max); I a I b) := (
+  (a > b ? (a; b)) >= (max)
+)
+
+(I (min); I a I b) := (
+  (a < b ? (a; b)) >= (max)
+)
