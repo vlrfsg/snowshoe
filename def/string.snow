@@ -1,0 +1,23 @@
+Snowshoe definition file
+Copyright 2021 vlrfsg
+<>
+
+(String) %% (
+  I length
+  I hash
+  A text
+)
+
+(S) := (String)
+
+((addChar) S base; S base I char) := (
+  I base.text :base.length = char
+  base.length += 1
+  base.hash = base.hash.rol{19} ^ char
+  base -> (addChar.base)
+  *> {addChar}
+)
+
+(S (+); S a S b) := (
+  
+)
